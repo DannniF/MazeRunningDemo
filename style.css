@@ -1,5 +1,71 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --pink: #f6e8ea;
+  --oRed: #ef626c;
+  --black: #22181c;
+  --grey: #312f2f;
+  --lBlue: #84dccf;
 
+  /* variation of colors Darker  */
+    --Drkpink: #e8c4ca ;
+    --drkoRed: #F6A2A8;
+    --drkblack: #eb333f;
+    --darkgrey: #;
+    --drklblue: #;
+
+  /* variations of colors lighter  */
+  --lPink: #EDEBEC;
+  --loRed: #;
+  --lblack: #;
+  --lgrey: #;
+  --llblue: #;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+html,body{
+height: 150vh;
+}
+
+body{
+  background-color: var(--black);
+  color: var(--pink);
+  display: flex;
+  flex-direction: column;
+
+}
+
+header, footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+main{
+  flex:1;
+  display:flex;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+
+#gameCanvas{
+ margin-top: 200px;
+  /* border: 1px solid lightgoldenrodyellow; */
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 1;
+  height: 600px;
+  width: 500px;
 }
 
